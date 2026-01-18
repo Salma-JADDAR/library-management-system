@@ -18,7 +18,59 @@ abstract class Membre {
         $this->dateFinAdhesion = $dateFinAdhesion;
         $this->soldeAmende = $soldeAmende;
     }
+     
+    public function getId(): int {
+        return $this->id;
+    }
 
+    public function getNom(): string {
+        return $this->nom;
+    }
+
+    public function getEmail(): string {
+        return $this->email;
+    }
+
+    public function getTelephone(): ?string {
+        return $this->telephone;
+    }
+
+    public function getDateDebutAdhesion(): string {
+        return $this->dateDebutAdhesion;
+    }
+
+    public function getDateFinAdhesion(): ?string {
+        return $this->dateFinAdhesion;
+    }
+
+    public function getSoldeAmende(): float {
+        return $this->soldeAmende;
+    }
+
+
+    public function setNom(string $nom): void {
+        $this->nom = $nom;
+    }
+
+    public function setEmail(string $email): void {
+        $this->email = $email;
+    }
+
+    public function setTelephone(?string $telephone): void {
+        $this->telephone = $telephone;
+    }
+
+    public function setDateDebutAdhesion(string $dateDebut): void {
+        $this->dateDebutAdhesion = $dateDebut;
+    }
+
+    public function setDateFinAdhesion(?string $dateFin): void {
+        $this->dateFinAdhesion = $dateFin;
+    }
+
+    public function setSoldeAmende(float $montant): void {
+        $this->soldeAmende = $montant;
+    }
    
     public function adhesionValide(): bool {
         $ajourdhui = date('Y-m-d');
