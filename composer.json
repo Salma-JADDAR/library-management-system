@@ -1,0 +1,16 @@
+{
+    "name": "ordinateur/library-management-system",
+    "autoload": {
+        "psr-4": {
+           "app\\": "app/"
+           
+        }
+    },
+    "authors": [
+        {
+            "name": "Salma GTU",
+            "email": "salmajaddar7@gmail.com"
+        }
+    ],
+    "require": {}
+}

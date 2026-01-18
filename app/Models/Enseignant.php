@@ -1,4 +1,5 @@
 <?php
+namespace app\Models;
 class Enseignant extends Membre {
     private string $fonction; 
 

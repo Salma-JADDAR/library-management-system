@@ -1,5 +1,5 @@
 <?php
-
+namespace app\Models;
 abstract class Membre {
     protected int $id;
     protected string $nom;
