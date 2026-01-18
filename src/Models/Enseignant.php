@@ -3,7 +3,7 @@ class Enseignant extends Membre {
     private string $fonction; 
 
     public function __construct(int $id,string $nom,string $email, ?string $telephone = null,string $dateDebutAdhesion,?string $dateFinAdhesion = null,float $soldeAmende = 0,string $fonction) {
-        parent::__construct($id, $nom, $email, $dateDebutAdhesion, $dateFinAdhesion, $telephone, $soldeAmende);
+        parent::__construct($id, $nom, $email,$telephone, $dateDebutAdhesion, $dateFinAdhesion,  $soldeAmende);
         $this->fonction = $fonction;
     }
 
